@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛒 Liste de Courses</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Liste de Courses</h1>
+    </div>
+
+    <div class="add-item">
+        <input type="text" id="itemInput" placeholder="Ajouter un article...">
+        <button onclick="addItem()">Ajouter</button>
+    </div>
+
+    <div class="items-list" id="itemsList"></div>
+
+    <div class="stats">
+        <p id="stats">0 article(s) dans la liste</p>
+        <button class="delete-btn" onclick="deleteAllItems()">Tout supprimer</button>
+    </div>
+
+    <div>
+    </div>
+</div>
+
+<div id="passwordModal" class="modal">
+    <div class="modal-content">
+        <h2>Connexion</h2>
+        <input type="password" id="passwordInput" placeholder="Mot de passe">
+        <div id="loginError" class="error-message"></div>
+        <button onclick="login()">Se connecter</button>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
