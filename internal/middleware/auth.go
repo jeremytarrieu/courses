@@ -2,16 +2,11 @@ package middleware
 
 import (
 	"net/http"
+	"shopping/internal/shared"
 	"strings"
 )
 
-// Auth interface abstracts authentication logic.
-type Auth interface {
-	Login(password string) (string, error)
-	VerifyToken(token string) error
-}
-
-func AuthMiddleware(auth Auth, next http.HandlerFunc) http.HandlerFunc {
+func AuthMiddleware(auth shared.Auth, next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		authHeader := r.Header.Get("Authorization")
 		if authHeader == "" {

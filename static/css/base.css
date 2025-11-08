@@ -1,0 +1,55 @@
+/* /static/css/base.css */
+:root {
+    --1-color:#fffffc;
+    --2-color:#ffc6ff;
+    --3-color:#bdb2ff;
+    --4-color:#a0c4ff;
+    --5-color:#9bf6ff;
+    --6-color:#caffbf;
+    --7-color:#fdffb6;
+    --8-color:#ffd6a5;
+    --9-color:#ffadad;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+    background: #f4f1ee;
+    min-height: 100vh;
+    padding: 20px;
+    color: #3c3c3c;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #dcdcdc;
+    background: #fffaf5;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* Responsive */
+@media (max-width: 480px) {
+    body{
+        background: var(--1-color);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .container {
+        background: var(--1-color);
+        min-height: 100vh;
+        max-height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+}

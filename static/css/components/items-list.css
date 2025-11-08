@@ -1,0 +1,85 @@
+/* /static/css/components/items-list.css */
+
+/* Responsive */
+@media (max-width: 480px) {
+    .items-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        min-height: 85vh;
+        max-height: 85vh;
+        padding: 0;
+        overflow-y: scroll;
+        margin: 0 1vw;
+    }
+
+    .item {
+        background: var(--4-color);
+        display: flex;
+        align-items: center;
+        height: 2vh;
+        padding: 2vh 0;
+        border-radius: 2vh;
+        border: none;
+        font-size: 4vh;
+        font-weight: bolder ;
+    }
+
+    .item input[type='checkbox'] {
+        appearance: none;
+        height: 4vh;
+        width: 10vw;
+        background: var(--6-color);
+        border-radius: 2vh 0 0 2vh;
+        cursor: pointer;
+    }
+
+    .item input[type='checkbox']:hover {
+        background: var(--7-color);
+    }
+
+    .item-name {
+        padding-left: 5vw;
+        font-size: 3vh;
+        font-weight: 500;
+        color: var(--1-color);
+        margin-bottom: 4px;
+    }
+
+    .item.checked {
+        background: var(--3-color);
+    }
+
+    .item.checked .item-name {
+        text-decoration: line-through;
+    }
+
+    .item-content {
+        flex: 1;
+    }
+
+    .item .delete-btn {
+        position: relative;
+        background: var(--9-color);
+        height: 4vh;
+        width: 15vw;
+        border: none;
+        border-left: 1vw solid var(--1-color);
+        border-radius: 0 2vh 2vh 0;
+    }
+
+    .item .delete-btn:hover {
+        background: var(--2-color);
+    }
+    .empty-state {
+        text-align: center;
+        padding: 40px;
+        color: #a0a0a0;
+    }
+
+    .empty-state p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+}
