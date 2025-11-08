@@ -1,0 +1,19 @@
+@media (max-width: 480px) {
+    .header {
+        background: var(--1-color);
+        margin: auto;
+        min-height: 2.5vh;
+        max-height: 2.5vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    .header h1 {
+        color: var(--3-color);
+        font-size: 2vh;
+        margin-bottom: 0;
+    }
+}

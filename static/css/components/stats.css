@@ -1,0 +1,19 @@
+/* /static/css/components/stats.css */
+
+@media (max-width: 480px) {
+    .stats {
+        background: var(--3-color);
+        text-align: center;
+        height: 6vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding-bottom: 1vh;
+    }
+    .stats p {
+        color: var(--1-color);
+        font-size: 3vh;
+    }
+}
